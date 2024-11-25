@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwipeGesture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ixJ-OT-Nl8">
+                                <rect key="frame" x="16" y="325" width="396" height="216"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-up-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mkg-nh-mCx">
+                                        <rect key="frame" x="0.0" y="0.0" width="396" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="kQA-1h-CPH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="HpD-VN-TXO">
+                                        <rect key="frame" x="0.0" y="72" width="396" height="72"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-left-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="6IM-Hm-Rdn">
+                                                <rect key="frame" x="0.0" y="0.0" width="198" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="UIh-lJ-LGv"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-right-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="TPV-NM-bXU">
+                                                <rect key="frame" x="198" y="0.0" width="198" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="72" id="IeO-Ss-g34"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down-black.png" translatesAutoresizingMaskIntoConstraints="NO" id="pB5-rh-h8U">
+                                        <rect key="frame" x="0.0" y="144" width="396" height="72"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="72" id="bri-LY-a1U"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ixJ-OT-Nl8" secondAttribute="bottom" constant="288" id="dWz-ic-Kcd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ixJ-OT-Nl8" secondAttribute="trailing" constant="16" id="dxZ-dr-GcX"/>
+                            <constraint firstItem="ixJ-OT-Nl8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="278" id="eq7-Hh-5Dq"/>
+                            <constraint firstItem="ixJ-OT-Nl8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="q61-F1-zKg"/>
+                            <constraint firstItem="ixJ-OT-Nl8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sjb-nb-tMA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgViewDown" destination="pB5-rh-h8U" id="B6X-XW-QRy"/>
+                        <outlet property="imgViewLeft" destination="6IM-Hm-Rdn" id="WOx-Pe-AT5"/>
+                        <outlet property="imgViewRight" destination="TPV-NM-bXU" id="ItO-8W-m3f"/>
+                        <outlet property="imgViewUp" destination="Mkg-nh-mCx" id="IGX-bY-d7K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-down-black.png" width="209" height="218"/>
+        <image name="arrow-left-black.png" width="218" height="209"/>
+        <image name="arrow-right-black.png" width="218" height="209"/>
+        <image name="arrow-up-black.png" width="209" height="218"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
